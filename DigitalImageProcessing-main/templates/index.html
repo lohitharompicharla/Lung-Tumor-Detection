@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lung Tumor Detection AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+    <h1>🫁 Lung Tumor Detection AI</h1>
+    <p class="subtitle">Upload a CT scan to detect lung cancer</p>
+
+    <form method="POST" enctype="multipart/form-data">
+        <label class="upload-box">
+            <input type="file" name="file" required onchange="previewImage(event)">
+            <span>📁 Choose CT Scan Image</span>
+        </label>
+
+        <img id="preview" class="preview" />
+
+        <button type="submit">🔍 Detect Tumor</button>
+    </form>
+
+    {% if result %}
+    <div class="result-box">
+
+        <h2 class="{% if 'Healthy' in result %}safe{% else %}danger{% endif %}">
+            {{ result }}
+        </h2>
+
+        <p class="stage"><b>Stage:</b> {{ stage }}</p>
+
+        <div class="images">
+            {% if img_path %}
+            <div>
+                <h3>Original Image</h3>
+                <img src="{{ img_path }}">
+            </div>
+            {% endif %}
+
+            {% if heatmap_path %}
+            <div>
+                <h3>Tumor Area (Heatmap)</h3>
+                <img src="{{ heatmap_path }}">
+            </div>
+            {% endif %}
+        </div>
+
+    </div>
+    {% endif %}
+
+</div>
+
+<script>
+function previewImage(event) {
+    const reader = new FileReader();
+    reader.onload = function(){
+        const output = document.getElementById('preview');
+        output.src = reader.result;
+        output.style.display = "block";
+    };
+    reader.readAsDataURL(event.target.files[0]);
+}
+</script>
+
+</body>
+</html>
