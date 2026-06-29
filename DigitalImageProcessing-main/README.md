@@ -74,28 +74,26 @@ The system uses a **Convolutional Neural Network (CNN)** model trained on medica
 
 ---
 
-## 🖥️ Project Structure
+## 📂 Project Structure
 
+```text
 Lung_Cancer_Project/
-│
-├── app.py
-├── train_model.py
-├── gradcam.py
-├── lung_cancer_model.h5
-├── requirements.txt
+│── app.py
+│── train_model.py
+│── gradcam.py
+│── lung_cancer_model.h5
+│── requirements.txt
 │
 ├── static/
-│   ├── style.css
-│   └── uploads/
+│   └── style.css
 │
 ├── templates/
 │   └── index.html
 │
-
-└── Data/
-├── train/
-├── valid/
-└── test/
+├── uploads/
+│
+└── README.md
+```
 ---## 🚀 How to Run### 1. Create Virtual Environment
 py -3.10 -m venv venv
 venv\Scripts\activate
