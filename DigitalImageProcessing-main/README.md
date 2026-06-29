@@ -103,7 +103,7 @@ pip install -r requirements.txt
 python app.py
 ### 4. Open Browser
 http://127.0.0.1:5000
----## 📊 Output- Displays prediction result- Shows uploaded image- Shows heatmap visualization of tumor region---## ⚠️ Limitations- Accuracy depends on dataset quality- Cannot replace professional medical diagnosis- Limited dataset size---## 🔮 Future Scope- Use **U-Net for tumor segmentation**- Improve accuracy using larger datasets- Deploy on cloud for real-time usage- Add mobile support---## 📚 References- TensorFlow Documentation- Keras Documentation- Research papers on lung cancer detection- Kaggle datasets---## 👩‍💻 Developed By**Kalyani Murakonda**---## 📌 NoteThis project is developed for academic purposes and should not be used for real medical diagnosis.
+---## 📊 Output- Displays prediction result- Shows uploaded image- Shows heatmap visualization of tumor region---## ⚠️ Limitations- Accuracy depends on dataset quality- Cannot replace professional medical diagnosis- Limited dataset size---## 🔮 Future Scope- Use **U-Net for tumor segmentation**- Improve accuracy using larger datasets- Deploy on cloud for real-time usage- Add mobile support---## 📚 References- TensorFlow Documentation- Keras Documentation- Research papers on lung cancer detection- Kaggle datasets---## 📌 NoteThis project is developed for academic purposes and should not be used for real medical diagnosis.
 
 
 
