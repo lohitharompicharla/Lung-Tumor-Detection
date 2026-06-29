@@ -91,6 +91,7 @@ Lung_Cancer_Project/
 ├── templates/
 │   └── index.html
 │
+
 └── Data/
 ├── train/
 ├── valid/
