@@ -4,12 +4,6 @@
 Lung Tumor Detection AI is a web-based application developed using **Flask and Deep Learning** that predicts whether a lung CT scan image contains a tumor or not.
 
 The system uses a **Convolutional Neural Network (CNN)** model trained on medical image datasets to classify images into different categories such as normal or cancerous.
-
-
-
-https://github.com/user-attachments/assets/96b227dd-fafa-4fad-8315-267abb014c29
-
-
 ---
 
 ## 🎯 Objectives
